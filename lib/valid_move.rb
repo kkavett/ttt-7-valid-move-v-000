@@ -14,13 +14,13 @@
 def valid_move?(board,index)
   if index.between?(0,8)
     if board[index-1] == "X" || "O"
-      false
-    elsif board[index-1] == " "
       true
+    elsif board[index-1] == " "
+      false
     else
       false
     end
   else
-    false
+    true
   end
 end
